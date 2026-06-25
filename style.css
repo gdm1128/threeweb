@@ -1,0 +1,117 @@
+.main{
+    margin: 0;
+    height: 65vh ;
+    width: 100%;
+    background-size: cover;
+    box-shadow: center;
+    animation: slider 10s linear infinite;
+}
+@keyframes slider {
+    0%{background-image:url('/United\ in\ building\ together\ resource/1.jpg')}
+    20%{background-image:url('/United\ in\ building\ together\ resource/2.jpg')}
+    50%{background-image:url('/United\ in\ building\ together\ resource/3.jpg')}
+    75%{background-image:url('/United\ in\ building\ together\ resource/4.jpg')}
+    100%{background-image:url('/United\ in\ building\ together\ resource/1.jpg')}
+}
+.image-row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 50px !important;
+    margin: 60px 0 !important;
+}
+.image-item {
+    width: 320px !important;
+    flex: 0 0 auto !important;
+}
+.img-zoom {
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+
+}
+.img-zoom img {
+    display: block !important;
+    width: 100% !important;
+    transition: transform 0.3s ease !important;
+}
+.img-zoom img:hover {
+    transform: scale(1.08) !important;
+}
+.img-zoom .overlay-text {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent) !important;
+    color: #fff9ef !important;
+    text-align: center !important;
+    padding: 1.8rem 1rem 1rem !important;
+    font-size: 1rem !important;
+    pointer-events: 1.2rem !important;
+}
+.img-zoom .overlay-text strong {
+    display: block !important;
+    font-size: 20px !important;
+    margin-bottom: 4px !important;
+    color: #c1ca0f !important;
+}
+/* 民族团结长文卡片（与春卡风格统一） */
+.unity-card {
+    max-width: 1400px;
+    margin: 3rem auto;
+    background: rgba(255, 255, 245, 0.94);
+    backdrop-filter: blur(2px);
+    border-radius: 2rem;
+    padding: 2rem 2rem 1.5rem;
+    box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(210, 180, 120, 0.4);
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.unity-card:hover {
+    transform: translateY(-4px);
+}
+
+/* 标题 */
+.unity-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #b3521a;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px dashed #e0a23b;
+    display: inline-block;
+    width: auto;
+    padding-bottom: 0.3rem;
+    letter-spacing: 2px;
+}
+
+.unity-text p {
+    color: #2c241a;
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 1.8rem;
+    font-size: 1.2rem;
+}
+
+/* 下一页按钮美化 */
+.next-btn {
+    display: inline-block;
+    background: #e0a23b;
+    color: #2c241a;
+    font-weight: 600;
+    padding: 0.6rem 2rem;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.next-btn:hover {
+    background: #c4882a;
+    transform: scale(1.02);
+    color: white;
+}
